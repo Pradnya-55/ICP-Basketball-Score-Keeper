@@ -3,6 +3,16 @@
     <head>
         <link rel="stylesheet"href="./css/style.css">
 
+        <script>
+            let scoreA= 0;
+            let scoreB= 0;
+
+            function incScoreA(){
+                scoreA++;
+                document.getElementById("scoreA")
+            }
+        </script>
+
     </head>
     <body>
         <div class="app-tittle-container">
@@ -11,14 +21,26 @@
          <div class="team-card-container">
          <div class="team-card">
              <h2 class="team-card-tittle">Team A😎🌻</h2>
-             <p class="team-card-score">0</p>
+             <p class="team-card-score" id="scoreA">0</p>
+             <div class="score-card-button-container">
+                <span class="score-card-button">👎</span>
+                 <span class="score-card-button">👍</span>
+                 
+
+             </div>
 
 
          </div>
 
          <div class="team-card">
              <h2 class="team-card-tittle">Team B😎🌼</h2>
-             <p class="team-card-score">0</p>
+             <p class="team-card-score" id="scoreB">0</p>
+             <div class="score-card-button-container">
+                <span class="score-card-button">👎</span>
+                 <span class="score-card-button">👍</span>
+                 
+
+             </div>
 
 
         </div>

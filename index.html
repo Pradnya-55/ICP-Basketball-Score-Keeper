@@ -9,8 +9,27 @@
 
             function incScoreA(){
                 scoreA++;
-                document.getElementById("scoreA")
+                document.getElementById("scoreA").innerHTML=scoreA;
             }
+
+            function incScoreB(){
+                scoreB++;
+                document.getElementById("scoreB").innerHTML=scoreB;
+            }
+
+             function descScoreA(){
+                 scoreA--;
+                 document.getElementById("scoreA").innerHTML=scoreA;
+
+             }
+
+             function descScoreB(){
+                 scoreB--;
+                 document.getElementById("scoreB").innerHTML=scoreB;
+
+             }
+        
+        
         </script>
 
     </head>
@@ -23,8 +42,8 @@
              <h2 class="team-card-tittle">Team A😎🌻</h2>
              <p class="team-card-score" id="scoreA">0</p>
              <div class="score-card-button-container">
-                <span class="score-card-button">👎</span>
-                 <span class="score-card-button">👍</span>
+                <span class="score-card-button" onclick="descScoreA()">👎</span>
+                 <span class="score-card-button" onClick="incScoreA()">👍</span>
                  
 
              </div>
@@ -36,14 +55,20 @@
              <h2 class="team-card-tittle">Team B😎🌼</h2>
              <p class="team-card-score" id="scoreB">0</p>
              <div class="score-card-button-container">
-                <span class="score-card-button">👎</span>
-                 <span class="score-card-button">👍</span>
+                <span class="score-card-button" onclick="descScoreB()">👎</span>
+                 <span class="score-card-button" onclick="incScoreB()">👍</span>
                  
 
              </div>
 
 
         </div>
+
+
+         </div>
+         <div class="reset-button-container">
+             <button class="btn-reset" onclick="reset()">Reset</button>
+
 
 
          </div>

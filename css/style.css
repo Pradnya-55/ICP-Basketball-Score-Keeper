@@ -13,3 +13,26 @@ body{
     border: white 5px solid;
 
 }
+.team-card-container{
+    display: flex;
+    justify-content: space-around;
+
+
+}
+.team-card{
+    background-color: white;
+    margin: 20px;
+    width: 300px;
+
+
+}
+.team-card-tittle{
+    text-align: center;
+
+}
+.team-card-score{
+    
+}
+
+
+
